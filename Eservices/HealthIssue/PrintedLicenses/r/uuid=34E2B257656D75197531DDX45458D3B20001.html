@@ -1256,12 +1256,7 @@
                                                         error: function(response) {
                                                             d = new Date();
 
-                                                            let btn = IdentityActive ? '#IdentityNumber' : '#CertificateId';
-                                                            $(btn).closest('.row').find("#img-captcha").attr("src", CaptchaUrl + d.getTime());
-                                                            if (IdentityActive)
-                                                                $('#CaptchaCodeIdentity').val('');
-                                                            else
-                                                                $("#CaptchaCodeCertificate").val('')
+                                                          
                                                         }
                                                     });
                                                 }
